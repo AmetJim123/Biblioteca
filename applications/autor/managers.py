@@ -12,9 +12,26 @@ class AutorManager(models.Manager):
             )
         return resultado
 
-    def buscar_autor2(self, kword):
+    # def buscar_autor2(self, kword):
 
-        resultado = self.filter(
-            Q(nombre__icontains=kword) | Q(apellido__icontains=kword)
-            )
-        return resultado
+    #     resultado = self.filter(
+    #         Q(nombre__icontains=kword) | Q(apellido__icontains=kword)
+    #         )
+    #     return resultado
+
+
+    # def buscar_autor3(self, kword):
+
+    #     resultado = self.filter(
+    #         nombre__icontains=kword
+    #         ).exclude(edad=74)
+    #     return resultado
+
+
+    # def buscar_autor4(self, kword):
+
+    #     resultado = self.filter(
+    #         edad__gt=40,
+    #         edad__lt=65
+    #         ).order_by('apellido', 'nombre', 'id')
+    #     return resultado
